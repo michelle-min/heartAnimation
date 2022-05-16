@@ -3,7 +3,6 @@
 const heart = [];
 const totalFrames = 240;
 let counter = 0;
-let inconsolata;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -21,11 +20,8 @@ function draw() {
   rotateX(time / 1000);
   rotateZ(time / 1234);
   text('p5.js', 0, 0);
+  fill(0, 102, 153, 51);
 }
-
-// function preload() {
-//   inconsolata = loadFont('assets/inconsolata.otf');
-// }
 
 function render(percent) {
   background(0);
